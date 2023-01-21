@@ -1,4 +1,4 @@
-package com.wsti.part;
+package com.wsti.parts;
 
 public class CarTire extends Tire {
     public CarTire() {

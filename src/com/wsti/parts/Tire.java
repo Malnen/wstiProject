@@ -1,4 +1,4 @@
-package com.wsti.part;
+package com.wsti.parts;
 
 public abstract class Tire {
     private final double price;

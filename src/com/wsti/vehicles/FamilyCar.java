@@ -1,4 +1,4 @@
-package com.wsti.vehicle;
+package com.wsti.vehicles;
 
 public class FamilyCar extends Vehicle {
     public FamilyCar() {

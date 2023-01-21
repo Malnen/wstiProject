@@ -1,7 +1,7 @@
-package com.wsti.vehicle;
+package com.wsti.vehicles;
 
-import com.wsti.part.Engine;
-import com.wsti.part.Tire;
+import com.wsti.parts.Engine;
+import com.wsti.parts.Tire;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.wsti.part;
+package com.wsti.parts;
 
 public class BikeTire extends Tire {
     public BikeTire() {

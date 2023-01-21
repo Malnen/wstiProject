@@ -1,12 +1,13 @@
 package com.wsti;
 
-import com.wsti.builder.VehicleBuilder;
-import com.wsti.part.BikeTire;
-import com.wsti.part.CarTire;
-import com.wsti.vehicle.Bike;
-import com.wsti.vehicle.FamilyCar;
-import com.wsti.vehicle.FastCar;
-import com.wsti.vehicle.Vehicle;
+import com.wsti.builders.VehicleBuilder;
+import com.wsti.enums.VehicleType;
+import com.wsti.parts.BikeTire;
+import com.wsti.parts.CarTire;
+import com.wsti.vehicles.Bike;
+import com.wsti.vehicles.FamilyCar;
+import com.wsti.vehicles.FastCar;
+import com.wsti.vehicles.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,24 +18,21 @@ public class MainApplication {
         VehicleBuilder builder = new VehicleBuilder();
 
         Vehicle bike = builder
-                .setVehicleType(Bike.class)
-                .setTireType(BikeTire.class)
+                .setVehicleType(VehicleType.BIKE)
                 .setEngine(1000, 750, 3000)
                 .setBrand("Yamaha")
                 .setModel("MT-15")
                 .build();
 
         Vehicle fastCar = builder
-                .setVehicleType(FastCar.class)
-                .setTireType(CarTire.class)
+                .setVehicleType(VehicleType.FAST)
                 .setEngine(3000, 2000, 20000)
                 .setBrand("Lamborghini")
                 .setModel("Aventador")
                 .build();
 
         Vehicle familyCar = builder
-                .setVehicleType(FamilyCar.class)
-                .setTireType(CarTire.class)
+                .setVehicleType(VehicleType.FAMILY)
                 .setEngine(1500, 400, 1000)
                 .setBrand("Opel")
                 .setModel("Zafira")
